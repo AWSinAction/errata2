@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+{{ range sort .Data.Pages "Params.page" "asc" }}
+    <h2 class="line">Section {{ .Params.section }}: {{ .Title }}</h2>
+    <p>
+      {{ .Content }}
+      Printed book page {{ .Params.page }} - {{ .Date.Format "2006-01-02" }}
+    </p>
+{{ end }}
+
+{{ partial "footer.html" . }}

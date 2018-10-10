@@ -1,0 +1,4 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Amazon Web Services in Action (Second Edition) Errata"
+uglyUrls = true
