@@ -4,7 +4,6 @@ draft = false
 title = "Private IP address does not change on instance resize"
 section = "3.4"
 page = 81
-
 +++
 
 > The public and private IP addresses have also changed. Grab the new public
