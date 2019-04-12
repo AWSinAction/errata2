@@ -19,7 +19,7 @@ To create a resource group, follow tis steps:
 1. Check if Group type is set to Tag based.
 1. Check if Resource types is set to All supported resource types.
 1. Add a tag system with the value wordpress.
-1. Set the Group name to worpredd or whatever you like.
+1. Set the Group name to wordpress or whatever you like.
 1. Click Create group to save.
 
 To navigate to the resources:
