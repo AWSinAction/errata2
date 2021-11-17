@@ -11,7 +11,7 @@ Hi all! If you find any any errors in [Amazon Web Services in Action (Second)](h
 ### Run locally
 
 ```
-make run
+docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo:0.83.1-ext-ubuntu server --buildDrafts --bind 0.0.0.0 -w
 ```
 
 Open http://localhost:1313/ to see the site.
@@ -19,7 +19,8 @@ Open http://localhost:1313/ to see the site.
 ### Generate HTML
 
 ```
-make build
+rm -rf public/
+docker run --rm -it -v $(pwd):/src klakegg/hugo:0.83.1-ext-ubuntu --buildDrafts
 ```
 
 send file `./public/index.html` to Susan Harkins <suha@manning.com>
